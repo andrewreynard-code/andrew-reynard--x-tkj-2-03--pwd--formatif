@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tombol</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px 30px;
+      background: #f7f9f9;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #134e4a;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.1rem;
+    }
+
+    .baris {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 10px 16px;
+      border: 2px solid transparent;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    /* Utama - teal */
+    .btn-utama {
+      background: #0f766e;
+      color: #fff;
+    }
+    .btn-utama:hover,
+    .btn-utama.paksa-hover {
+      background: #0b5750;
+    }
+
+    /* Sekunder - mint */
+    .btn-sekunder {
+      background: #d5f0ec;
+      color: #0f766e;
+    }
+    .btn-sekunder:hover,
+    .btn-sekunder.paksa-hover {
+      background: #b0e0d9;
+    }
+
+    /* Outline - ungu */
+    .btn-outline {
+      background: #fff;
+      color: #7c3aed;
+      border-color: #7c3aed;
+    }
+    .btn-outline:hover,
+    .btn-outline.paksa-hover {
+      background: #ede4fd;
+    }
+
+    /* Aksen - merah muda */
+    .btn-aksen {
+      background: #e11d48;
+      color: #fff;
+    }
+    .btn-aksen:hover,
+    .btn-aksen.paksa-hover {
+      background: #be123c;
+    }
+
+    a {
+      font-size: 0.9rem;
+      color: #0f766e;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Normal</h2>
+  <div class="baris">
+    <button class="btn btn-utama">Lihat Proyek</button>
+    <button class="btn btn-sekunder">Unduh CV</button>
+    <button class="btn btn-outline">Hubungi Saya</button>
+    <button class="btn btn-aksen">Kirim Pesan</button>
+  </div>
+
+  <h2>Hover (dipaksa agar terlihat di screenshot)</h2>
+  <div class="baris">
+    <button class="btn btn-utama paksa-hover">Lihat Proyek</button>
+    <button class="btn btn-sekunder paksa-hover">Unduh CV</button>
+    <button class="btn btn-outline paksa-hover">Hubungi Saya</button>
+    <button class="btn btn-aksen paksa-hover">Kirim Pesan</button>
+  </div>
+
+  <a href="index.html">Kembali ke Beranda</a>
+
+</body>
+</html>
